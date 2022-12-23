@@ -4,26 +4,27 @@ import { AchievementCard } from './AchievementCard'
 const data = [
     {
         id:'1',
-        title:'GDSC Technical Lead',
-        description:'Lead Technical team at GDSC Conestoga waterloo',
-        image:'/static/proj.png',
-        link:'https://mui.com/material-ui/material-icons/?query=right+arrow&selected=ArrowForward',
-        buttonText:'Workshop'
+        title:'NewHacks Winner',
+        description:'Won MLH Sponsor Prize: Best Accessibility Hack sponsored by Fidelity. Have a look at our project on DevPost',
+        image:'/static/hack.jpg',
+        link:'https://devpost.com/software/easymed-y9so6w',
+        buttonText:'DevPost Link'
     },
     {
         id:'2',
         title:'GDSC Technical Lead',
-        description:'Lead Technical team at GDSC Conestoga waterloo',
-        image:'/static/proj.png',
-        link:'https://mui.com/material-ui/material-icons/?query=right+arrow&selected=ArrowForward',
-        buttonText:'DevPost Link'
-    }
+        description:'Got selected as Lead Technical team at GDSC Conestoga waterloo for 2022. Take a look at the workshop I took on teaching how to make a weather app using React Native',
+        image:'/static/gdsc.png',
+        link:'https://www.youtube.com/watch?v=N27kPBHLvAQ&t',
+        buttonText:'Workshop'
+    },
+    
 ]
 export const Achievements = () => {
   return (
-    <div className='p-11 px-28  flex flex-col items-center bg-[#34353a] relative pb-40 z-20'>
-        <p className='text-[#f6f6f6] font-extrabold text-5xl absolute -top-8 left-28'>Achievements</p>
-        <div className='flex mt-12 w-10/12 justify-center flex-wrap flex-row '>
+    <div id='ach' className='lg:p-11 lg:5 lg:px-10  flex flex-col items-center bg-[#34353a] relative pb-20 z-20'>
+        <p className='text-[#f6f6f6] font-extrabold lg:text-5xl text-3xl absolute lg:-top-8 -top-5 lg:left-28 left-7 font-Ubuntu'>Achievements</p>
+        <div className='flex mt-12 w-11/12 justify-center flex-wrap'>
             {
                 data.map(item => {
                     return(

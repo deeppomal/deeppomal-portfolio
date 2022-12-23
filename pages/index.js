@@ -26,8 +26,8 @@ export default function Home() {
     }
   };
   return (
-    <div className='min-h-screen ' >
-      {isVisible&&<Navbar />}
+    <div className='min-h-screen' >
+      {isVisible&&<Navbar isVisible={isVisible} />}
       <HomeScreen />
       <Portfolio />
       <Experience />

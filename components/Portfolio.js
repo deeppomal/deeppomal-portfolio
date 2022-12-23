@@ -4,42 +4,42 @@ import { ProjectCard } from './ProjectCard'
 const data = [
   {
     id:'1',
-    name:'Deep Search',
-    descr:'Search the web efficiently by getting summaries of the top 3 articles and video recommendations for your query.Search the web efficiently by',
-    viewLink:'deep-search.netlify.app',
-    codeLink:'deep-search.netlify.app',
-    image:'/static/proj.png'
+    name:'SpotRec',
+    descr:"This app allows users to create personalized playlists based on their favorite artists and genres, which can then be saved to their Spotify library. It is convenient, easy to use, and helps users discover new music.",
+    viewLink:'https://www.youtube.com/watch?v=R_JPTWPQWGc',
+    codeLink:'https://github.com/deeppomal/SpotrecApp',
+    image:'/static/spotrec.png'
   },
   {
     id:'2',
     name:'Deep Search',
-    descr:'Search the web efficiently by getting summaries of the top 3 articles and video recommendations for your query.Search the web efficiently by',
+    descr:"This tool allows users to quickly search relevant articles and videos with just one click. The tool gets summaries of the highest-rated articles from Google and recommends top YouTube videos based on the user's query. The goal of the tool is to make web research more efficient and productive.",
     viewLink:'deep-search.netlify.app',
-    codeLink:'deep-search.netlify.app',
+    codeLink:'https://github.com/deeppomal/deep-search',
     image:'/static/proj.png'
   },
   {
     id:'3',
-    name:'Deep Search',
-    descr:'Search the web efficiently by getting summaries of the top 3 articles and video recommendations for your query.Search the web efficiently by',
-    viewLink:'deep-search.netlify.app',
-    codeLink:'deep-search.netlify.app',
-    image:'/static/proj.png'
+    name:'Tesla Clone',
+    descr:'This website is an attempt to clone the well-designed Tesla website and test my front-end skills',
+    viewLink:'tesla-clone-dp.netlify.app/',
+    codeLink:'https://github.com/deeppomal/tesla-clone',
+    image:'/static/tesla.png'
   },
   {
     id:'4',
-    name:'Deep Search',
-    descr:'Search the web efficiently by getting summaries of the top 3 articles and video recommendations for your query.Search the web efficiently by',
-    viewLink:'deep-search.netlify.app',
-    codeLink:'deep-search.netlify.app',
-    image:'/static/proj.png'
+    name:'Keyboard King',
+    descr:'This website helps users improve their typing speed by allowing them to test how many words they can type correctly in 30 seconds. It is easy to use and can help users increase their typing speed.',
+    viewLink:'keyboard-king.netlify.app/',
+    codeLink:'https://github.com/deeppomal/Keyboard-King',
+    image:'/static/keyboard.png'
   }
 ]
 export const Portfolio = () => {
   return (
-    <div className='p-11 px-28 h-screen flex flex-col items-center bg-[#34353a] -z-20'>
-      <p className='text-5xl text-[#f6f6f6] font-extrabold'>Projects</p>
-      <div className='flex mt-12 w-10/12 justify-center flex-wrap flex-row '>
+    <div id='projects' className='lg:p-11 p-3 lg:px-28 min-h-screen flex flex-col items-center bg-[#34353a] -z-20 pb-12'>
+      <p className='lg:text-5xl text-3xl text-[#f6f6f6] font-Ubuntu'>Projects</p>
+      <div className='flex mt-12 w-full justify-center flex-wrap'>
         {
           data.map(item => {
             return(
