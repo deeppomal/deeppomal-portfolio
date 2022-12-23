@@ -14,7 +14,7 @@ export const HomeScreen = () => {
           <div className='flex flex-col '>
             <p className='lg:text-3xl md:text-2xl text-xl text-[#f6f6f6] font-Montserrat '>Hi, I'm<span className='text-[#f5c169] lg:ml-4 text-4xl lg:text-7xl font-Ubuntu'> Deep Pomal</span></p>
             <p className='lg:text-3xl md:text-2xl text-xl text-[#f6f6f6] mt-4 font-Montserrat'>Full Stack Developer</p>
-            <a href="https://drive.google.com/file/d/1QVe3IHNqYO1ZsVS_4vIVExd5MItxWgzo/view?usp=sharing" target={'_blank'} className='lg:w-56'>
+            <a href="https://drive.google.com/file/d/1QVe3IHNqYO1ZsVS_4vIVExd5MItxWgzo/view?usp=sharing" target={'_blank'} rel="noreferrer" className='lg:w-56'>
               <div className='lg:border-4 border-2 border-[#f5c169] lg:w-56 py-2 rounded flex items-center justify-center mt-12 cursor-pointer 
               hover:bg-[#f5c169] group hover:origin-center'>
                 <p className='lg:text-xl text-lg text-[#f5c169] font-bold font-Montserrat group-hover:text-[#34353a] '>Resume</p>
@@ -34,9 +34,9 @@ export const HomeScreen = () => {
        
           <div className='absolute bottom-10 lg:right-10 right-4 flex items-center flex-col z-0'>
             <div className='bg-[#f5c169] lg:w-1 w-0.5 lg:h-28 h-24 rounded'></div>
-            <a href="https://github.com/deeppomal" target={'_blank'}><GitHubIcon className='lg:text-3xl text-xl text-[#f6f6f6] mt-14 cursor-pointer'/></a>
-            <a href="https://twitter.com/deeppomal98" target={'_blank'}><TwitterIcon className='lg:text-3xl text-xl text-[#f6f6f6] mt-3 cursor-pointer'/></a>
-            <a href="https://www.linkedin.com/in/deep-pomal-87751099/" target={'_blank'}><LinkedInIcon className='lg:text-3xl text-xl text-[#f6f6f6] mt-3 cursor-pointer' /></a>
+            <a href="https://github.com/deeppomal" target={'_blank'} rel="noreferrer"><GitHubIcon className='lg:text-3xl text-xl text-[#f6f6f6] mt-14 cursor-pointer'/></a>
+            <a href="https://twitter.com/deeppomal98" target={'_blank'} rel="noreferrer"><TwitterIcon className='lg:text-3xl text-xl text-[#f6f6f6] mt-3 cursor-pointer'/></a>
+            <a href="https://www.linkedin.com/in/deep-pomal-87751099/" target={'_blank'} rel="noreferrer"><LinkedInIcon className='lg:text-3xl text-xl text-[#f6f6f6] mt-3 cursor-pointer' /></a>
           </div>  
         </div>
     </div>
