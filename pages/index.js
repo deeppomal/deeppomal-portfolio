@@ -5,6 +5,7 @@ import { Portfolio } from '../components/Portfolio'
 import { Experience } from '../components/Experience'
 import { Achievements } from '../components/Achievements'
 import { Navbar } from '../components/Navbar'
+import Head from 'next/head'
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
@@ -27,6 +28,10 @@ export default function Home() {
   };
   return (
     <div className='min-h-screen' >
+      <Head>
+        <title>Deep Pomal</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       {isVisible&&<Navbar isVisible={isVisible} />}
       <HomeScreen />
       <Portfolio />
