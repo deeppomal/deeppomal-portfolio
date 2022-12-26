@@ -6,9 +6,12 @@ import { Experience } from '../components/Experience'
 import { Achievements } from '../components/Achievements'
 import { Navbar } from '../components/Navbar'
 import Head from 'next/head'
+import { Education } from '../components/Education'
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
     return () =>
@@ -21,7 +24,7 @@ export default function Home() {
   
     if (winScroll > heightToHideFrom) {
        isVisible &&      // to limit setting state only the first time
-         setIsVisible(false);
+         setIsVisible(true);
     } else {
          setIsVisible(true);
     }
@@ -32,11 +35,12 @@ export default function Home() {
         <title>Deep Pomal</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      {isVisible&&<Navbar isVisible={isVisible} />}
+      <Navbar isVisible={isVisible} isMenuVisible={isMenuVisible} setIsMenuVisible={()=>setIsMenuVisible(!isMenuVisible)} />
       <HomeScreen />
       <Portfolio />
       <Experience />
       <Achievements />
+      <Education />
     </div>
   )
 }

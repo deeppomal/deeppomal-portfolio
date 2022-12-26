@@ -22,9 +22,9 @@ const data = [
 ]
 export const Achievements = () => {
   return (
-    <div id='ach' className='lg:p-11 lg:5 lg:px-10  flex flex-col items-center bg-[#34353a] relative pb-20 z-20'>
+    <div id='ach' className='lg:p-11 lg:5 lg:px-10  flex flex-col items-center bg-[#34353a] relative  z-20'>
         <p className='text-[#f6f6f6] font-extrabold lg:text-5xl text-3xl absolute lg:-top-8 -top-5 lg:left-28 left-7 font-Ubuntu'>Achievements</p>
-        <div className='flex mt-12 w-11/12 justify-center flex-wrap'>
+        <div className='flex mt-12 w-11/12 justify-center flex-wrap  pb-20'>
             {
                 data.map(item => {
                     return(
@@ -33,7 +33,6 @@ export const Achievements = () => {
                 })
             }
         </div>
-        
     </div>
   )
 }

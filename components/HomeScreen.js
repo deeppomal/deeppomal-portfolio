@@ -34,9 +34,9 @@ export const HomeScreen = () => {
        
           <div className='absolute bottom-10 lg:right-10 right-4 flex items-center flex-col z-0'>
             <div className='bg-[#f5c169] lg:w-1 w-0.5 lg:h-28 h-24 rounded'></div>
-            <a href="https://github.com/deeppomal" target={'_blank'} rel="noreferrer"><GitHubIcon className='lg:text-3xl text-xl text-[#f6f6f6] mt-14 cursor-pointer'/></a>
-            <a href="https://twitter.com/deeppomal98" target={'_blank'} rel="noreferrer"><TwitterIcon className='lg:text-3xl text-xl text-[#f6f6f6] mt-3 cursor-pointer'/></a>
-            <a href="https://www.linkedin.com/in/deep-pomal-87751099/" target={'_blank'} rel="noreferrer"><LinkedInIcon className='lg:text-3xl text-xl text-[#f6f6f6] mt-3 cursor-pointer' /></a>
+            <a href="https://github.com/deeppomal" target={'_blank'} rel="noreferrer"><GitHubIcon className='lg:text-3xl text-2xl text-[#f6f6f6] mt-14 cursor-pointer'/></a>
+            <a href="https://twitter.com/deeppomal98" target={'_blank'} rel="noreferrer"><TwitterIcon className='lg:text-3xl text-2xl text-[#f6f6f6] mt-3 cursor-pointer'/></a>
+            <a href="https://www.linkedin.com/in/deep-pomal-87751099/" target={'_blank'} rel="noreferrer"><LinkedInIcon className='lg:text-3xl text-2xl text-[#f6f6f6] mt-3 cursor-pointer' /></a>
           </div>  
         </div>
     </div>
