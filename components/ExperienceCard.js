@@ -10,7 +10,7 @@ export const ExperienceCard = ({data}) => {
         </div>
         <div className='mx-4 lg:mt-2 mt-5'>
             <p className='text-[#f6f6f6] font-bold lg:text-3xl text-xl font-Ubuntu'>{data.company}</p>
-            <div className='flex justify-between items-center'>
+            <div className='flex justify-between flex-col md:flex-row md:items-center'>
                 <p className='text-[#f6f6f6]  lg:text-lg text-sm font-Montserrat'>{data.role}</p>
                 <p className='text-[#f6f6f6]  lg:text-lg text-sm font-Montserrat'>{data.year}</p>
             </div>
