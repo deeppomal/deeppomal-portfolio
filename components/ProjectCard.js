@@ -9,14 +9,14 @@ export const ProjectCard = ({data}) => {
             <p className='text-[#f5c169] lg:text-2xl text-xl font-Ubuntu'>{data.name}</p>
             <p className='w-11/12 text-[#f6f6f6] mt-2 lg:text-lg font-Montserrat'>{data.descr}</p>
             <div className='flex items-center mt-2'>
-                <a href={data.viewLink} target={'_blank'} rel="noreferrer" ><div className='bg-[#f5c169] py-2 px-12 rounded mr-2 cursor-pointer'>
-                    <p className='text-[#34353a] font-bold font-Montserrat  lg:text-lg'>View</p>
+                <a href={data.codeLink} target={'_blank'} rel="noreferrer" ><div className='bg-[#f5c169] py-2 px-12 rounded mr-2 cursor-pointer'>
+                    <p className='text-[#34353a] font-bold font-Montserrat  lg:text-lg'>Code</p>
                 </div>
                 </a>
-                <a href={data.codeLink} target={'_blank'} rel="noreferrer"><div className='border border-[#f5c169] py-2 px-12 rounded m-2 cursor-pointer'>
-                    <p className='text-[#f5c169] font-bold font-Montserrat lg:text-lg'>Code</p>
+                {data.viewLink &&<a href={data.viewLink} target={'_blank'} rel="noreferrer"><div className='border border-[#f5c169] py-2 px-12 rounded m-2 cursor-pointer'>
+                    <p className='text-[#f5c169] font-bold font-Montserrat lg:text-lg'>Demo</p>
                 </div>
-                </a>
+                </a>}
             </div>
         </div>
     </div>

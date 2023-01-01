@@ -14,7 +14,7 @@ const data = [
     id:'2',
     name:'Deep Search',
     descr:"This tool allows users to quickly search relevant articles and videos with just one click. The tool gets summaries of the highest-rated articles from Google and recommends top YouTube videos based on the user's query. The goal of the tool is to make web research more efficient and productive.",
-    viewLink:'deep-search.netlify.app',
+    viewLink:'',
     codeLink:'https://github.com/deeppomal/deep-search',
     image:'/static/proj.png'
   },
@@ -22,7 +22,7 @@ const data = [
     id:'3',
     name:'Tesla Clone',
     descr:'This website is an attempt to clone the well-designed Tesla website and test my front-end skills',
-    viewLink:'tesla-clone-dp.netlify.app/',
+    viewLink:'',
     codeLink:'https://github.com/deeppomal/tesla-clone',
     image:'/static/tesla.png'
   },
@@ -30,7 +30,7 @@ const data = [
     id:'4',
     name:'Keyboard King',
     descr:'This website helps users improve their typing speed by allowing them to test how many words they can type correctly in 30 seconds. It is easy to use and can help users increase their typing speed.',
-    viewLink:'keyboard-king.netlify.app/',
+    viewLink:'',
     codeLink:'https://github.com/deeppomal/Keyboard-King',
     image:'/static/keyboard.png'
   }
