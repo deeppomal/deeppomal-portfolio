@@ -5,7 +5,7 @@ const data = [
     
     {
         id:'1',
-        year:"April '21 - Present",
+        year:"April '21 - April '23",
         role:'React Native Developer',
         company:'ScalingWeb',
         jd: "Developed Instagram's reels-like feature for the company's MVP. Increased video loading speeds by 15% and also added infinite scroll \nIntegrated 3 types of authentication: Email/ Phone and Social \nDesigned pixel-perfect UI which was responsive with every Android and IOS operated screen"

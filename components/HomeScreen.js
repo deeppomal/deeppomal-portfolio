@@ -14,7 +14,7 @@ export const HomeScreen = () => {
           <div className='flex flex-col '>
             <p className='lg:text-3xl md:text-2xl text-xl text-[#f6f6f6] font-Montserrat '>Hi, I&apos;m<span className='text-[#f5c169] lg:ml-4 text-4xl lg:text-7xl font-Ubuntu'> Deep Pomal</span></p>
             <p className='lg:text-3xl md:text-2xl text-xl text-[#f6f6f6] mt-4 font-Montserrat'>Full Stack Developer</p>
-            <a href="https://drive.google.com/file/d/1HE-sKlVDLOO1gWhocgJ1D1-O7MV1hXkp/view?usp=sharing" target={'_blank'} rel="noreferrer" className='lg:w-56'>
+            <a href="https://drive.google.com/file/d/1GkBA9LXU4qvfeAxOwNxNi7NUqrLJyb_R/view?usp=sharing" target={'_blank'} rel="noreferrer" className='lg:w-56'>
               <div className='lg:border-4 border-2 border-[#f5c169] lg:w-56 py-2 rounded flex items-center justify-center mt-12 cursor-pointer 
               hover:bg-[#f5c169] group hover:origin-center'>
                 <p className='lg:text-xl text-lg text-[#f5c169] font-bold font-Montserrat group-hover:text-[#34353a] '>Resume</p>
