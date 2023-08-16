@@ -22,7 +22,7 @@ const data = [
     {
         id:'3',
         year:"Jan '19 - July '19",
-        company:'National University of Singapore ',
+        company:'National University of Singapore',
         role:'Research Intern',
         jd: "Performed data analysis on a hospital database using machine learning techniques to predict the length of stay of a patient to help the hospital with supply chain management",
 
