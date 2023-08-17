@@ -2,68 +2,65 @@ import React,{useState,useEffect} from 'react'
 import Image from 'next/image'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export const Navbar = ({setIsMenuVisible,isMenuVisible}) => {
   const [isVisible, setIsVisible] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", listenToScroll);
-    return () =>
-       window.removeEventListener("scroll", listenToScroll);
-  }, [])
-  const listenToScroll = () => {
-    let heightToHideFrom = 150;
-    const winScroll = document.body.scrollTop ||
-        document.documentElement.scrollTop;
-  
-    if (winScroll > heightToHideFrom) {
-       isVisible &&      // to limit setting state only the first time
-         setIsVisible(false);
-    } else {
-         setIsVisible(true);
+  const [isDark,setIsDark] = useState(true)
+  let currentTheme
+  const handleThemeSwitch = () => {
+    currentTheme = localStorage.theme
+    if(currentTheme === 'light'){
+      localStorage.theme = 'dark'
+      document.documentElement.classList.add('dark')
+      setIsDark(true)
     }
-  };
+    else{
+      localStorage.theme = 'light'
+      document.documentElement.classList.remove('dark')
+      setIsDark(false)
+    }
+  }
   return (
-    <div className={`flex justify-center items-center fixed top-0 w-full lg:py-10 py-8 
-      bg-[#34353a]/95 drop-shadow-md z-50`}>
-        <a href="#"><Image
-          src='/static/logo.png'
-          alt='logo'
-          width={600}
-          height={600}
-          className='absolute left-0 top-2 lg:top-2 cursor-pointer h-12 w-20 md:h-20 md:w-36 lg:h-24 lg:w-44'
-        /></a>
-        <div className='flex-row md:flex lg:flex items-center hidden '>
-          <a href="#projects"><p className='text-[#f6f6f6] lg:mx-6 mx-2 text-sm md:text-lg lg:text-xl font-semibold cursor-pointer font-Montserrat'>Projects</p></a>
-          <a href="#exp"><p className='text-[#f6f6f6] lg:mx-6 mx-2 text-sm md:text-lg  lg:text-xl font-semibold cursor-pointer font-Montserrat'>Experience</p></a>
-          <a href="#ach"><p className='text-[#f6f6f6] lg:mx-6 mx-2 text-sm md:text-lg lg:text-xl font-semibold cursor-pointer font-Montserrat'>Achievements</p></a>
-          <a href="#ed"><p className='text-[#f6f6f6] lg:mx-6 mx-2 text-sm md:text-lg lg:text-xl font-semibold cursor-pointer font-Montserrat'>Education</p></a>
+    <div className={`flex items-center flex-col lg:flex-row fixed top-0 w-full bg-[url('/static/bg2.png')] dark:bg-[url('/static/bgdark.png')] dark:bg-contain z-50`}>
+        <div className='border-b border-b-[#14303f] dark:border-b-[#ffb39b] w-full lg:w-1/5 p-4 hidden lg:flex items-center justify-center'>
+          <a href="#"><p className='dark:text-[#ffb39b] text-[#14303f] lg:mx-6 mx-2 text-sm md:text-lg lg:text-xl font-semibold cursor-pointer font-Montserrat'>Deep Pomal</p></a>
         </div>
-        <div className='cursor-pointer  absolute right-10 md:hidden lg:hidden z-50' onClick={setIsMenuVisible}>
-          {!isMenuVisible ? <MenuIcon className='text-[#f6f6f6] text-3xl '/>
-          :
-          <CloseIcon className='text-[#f6f6f6] text-3xl ' />}
+        <div className='flex lg:hidden w-full'>
+          <div className='border-b border-b-[#14303f] dark:border-b-[#ffb39b] w-1/2 p-3 flex items-center justify-center'>
+            <a href="#"><p className='dark:text-[#ffb39b] text-[#14303f] mx-2 text-sm font-semibold cursor-pointer font-Montserrat'>Deep Pomal</p></a>
+          </div>
+          <div className='border-b border-l border-b-[#14303f] border-l-[#14303f] dark:border-b-[#ffb39b] dark:border-l-[#ffb39b] flex w-1/2 p-3 items-center justify-center'>
+            {
+            !isDark?
+              <LightModeIcon className='text-[#14303f] text-sm' />
+              :
+              <DarkModeIcon className='text-[#ffb39b] text-sm'/>
+            }
+            <p className='dark:text-[#ffb39b] text-[#14303f]  mx-2 text-sm font-semibold cursor-pointer font-Montserrat'
+            onClick={handleThemeSwitch}>Mode</p>
+          </div>
         </div>
-        <div
-          className={`top-0 right-0 w-3/4 fixed z-30 bg-[#2a2b2e]  ease-in-out duration-300 ${
-            isMenuVisible ? "translate-x-0 " : "translate-x-full"
-          } p-5`}
-        >
-          <div>
-            <a href="#" onClick={setIsMenuVisible}><p className='text-[#f6f6f6] cursor-pointer my-7 font-Montserrat font-semibold text-lg'>Home</p></a>
-            <a href="#projects" onClick={setIsMenuVisible}><p className='text-[#f6f6f6] cursor-pointer my-7 font-Montserrat font-semibold text-lg'>Projects</p></a>
-            <a href="#exp"  onClick={setIsMenuVisible}><p className='text-[#f6f6f6] cursor-pointer my-7 font-Montserrat font-semibold text-lg'>Experience</p></a>
-            <a href="#ach"  onClick={setIsMenuVisible}><p className='text-[#f6f6f6] cursor-pointer my-7 font-Montserrat font-semibold text-lg'>Achievements</p></a>
-            <a href="#ed" onClick={setIsMenuVisible}><p className='text-[#f6f6f6] cursor-pointer my-7 font-Montserrat font-semibold text-lg'>Education</p></a>
-          </div>
-          <div className='flex justify-evenly items-center'>
-              <a href="https://github.com/deeppomal" target={'_blank'} rel="noreferrer"><GitHubIcon className='text-3xl  mt-6  text-[#f6f6f6] cursor-pointer'/></a>
-              <a href="https://twitter.com/deeppomal98" target={'_blank'} rel="noreferrer"><TwitterIcon className='text-3xl  mt-6  text-[#f6f6f6] cursor-pointer'/></a>
-              <a href="https://www.linkedin.com/in/deep-pomal-87751099/" target={'_blank'} rel="noreferrer"><LinkedInIcon className='text-3xl  mt-6  text-[#f6f6f6]  cursor-pointer' /></a>
-          </div>
+        <div className='flex-row flex md:flex lg:flex items-center lg:border-x border-b lg:border-x-[#14303f] lg:dark:border-x-[#ffb39b] 
+        border-b-[#14303f] dark:border-b-[#ffb39b] w-full lg:w-3/5 p-4 lg:justify-center' >
+          <a href="#projects"><p className='dark:text-[#ffb39b] text-[#14303f] lg:mx-6 mx-2 text-sm md:text-lg lg:text-xl font-semibold cursor-pointer font-Montserrat'>Projects</p></a>
+          <a href="#exp"><p className='dark:text-[#ffb39b] text-[#14303f] lg:mx-6 mx-2 text-sm md:text-lg  lg:text-xl font-semibold cursor-pointer font-Montserrat'>Experience</p></a>
+          <a href="#ach"><p className='dark:text-[#ffb39b] text-[#14303f] lg:mx-6 mx-2 text-sm md:text-lg lg:text-xl font-semibold cursor-pointer font-Montserrat'>Achievements</p></a>
+          <a href="#ed"><p className='dark:text-[#ffb39b] text-[#14303f] lg:mx-6 mx-2 text-sm md:text-lg lg:text-xl font-semibold cursor-pointer font-Montserrat'>Education</p></a>
+        </div>
+        <div className='border-b border-b-[#14303f] dark:border-b-[#ffb39b] w-1/5 p-4 hidden lg:flex items-center justify-center'>
+          {
+          !isDark?
+            <LightModeIcon className='text-[#14303f] ' />
+            :
+            <DarkModeIcon className='text-[#ffb39b]'/>
+          }
+          <p className='dark:text-[#ffb39b] text-[#14303f] lg:mx-6 mx-2 text-sm md:text-lg lg:text-xl font-semibold cursor-pointer font-Montserrat'
+          onClick={handleThemeSwitch}>Mode</p>
         </div>
     </div>
   )

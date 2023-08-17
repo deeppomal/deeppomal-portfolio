@@ -4,7 +4,7 @@ import { ProjectCard } from './ProjectCard'
 const data = [
   {
     id:'1',
-    name:'PlayBet',
+    name:'playbet.netlify.app',
     descr:"Developed a robust MERN stack app for football betting, enabling users to engage in virtual money wagering.",
     viewLink:'https://playbet.netlify.app/',
     codeLink:'https://github.com/deeppomal/playbet_frontend',
@@ -21,13 +21,13 @@ const data = [
 ]
 export const Portfolio = () => {
   return (
-    <div id='projects' className='lg:p-11 p-3 lg:px-28 min-h-screen flex flex-col items-center bg-[#34353a] -z-20 pb-12'>
-      <p className='lg:text-5xl text-3xl text-[#f6f6f6] font-Ubuntu'>Projects</p>
-      <div className='flex mt-12 w-full justify-center flex-wrap'>
+    <div id='projects' className='flex flex-col items-center -z-20 pb-12'>
+      <p className='lg:text-4xl text-3xl dark:text-[#ffb39b] text-[#14303f] font-Ubuntu'>Web Projects</p>
+      <div className='mt-5 w-full grid lg:grid-cols-2 grid-flow-row'>
         {
-          data.map(item => {
+          data.map((data,index) => {
             return(
-              <ProjectCard data={item} key={item.id} />
+              <ProjectCard data={data} key={data.id} index={index} />
             )
           })
         }

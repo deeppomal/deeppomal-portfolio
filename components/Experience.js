@@ -5,7 +5,7 @@ const data = [
     
     {
         id:'1',
-        year:"April '21 - April '23",
+        year:"April '21 - Jan '22",
         role:'React Native Developer',
         company:'ScalingWeb',
         jd: "Developed Instagram's reels-like feature for the company's MVP. Increased video loading speeds by 15% and also added infinite scroll \nIntegrated 3 types of authentication: Email/ Phone and Social \nDesigned pixel-perfect UI which was responsive with every Android and IOS operated screen"
@@ -31,8 +31,9 @@ const data = [
 ]
 export const Experience = () => {
   return (
-    <div id='exp' className='lg:p-11 p-5 lg:px-28 min-h-screen flex flex-col items-center bg-[#3d3e42] relative z-10 pb-20'>
-        <p className='text-[#f6f6f6] font-Ubuntu lg:text-5xl text-3xl absolute lg:-top-8 -top-5 lg:left-28 left-7'>Experience</p>
+    <div id='exp' className='lg:p-11 p-5 lg:px-28 flex flex-col items-center relative z-10'>
+       <p className='dark:text-[#ffb39b] text-[#14303f] font-Ubuntu lg:text-4xl text-3xl w-full'>Experience</p>
+       <div className='h-[2px] w-full dark:bg-[#ffb39b] bg-[#14303f] mt-2' />
         {
             data.map(item => {
                 return(

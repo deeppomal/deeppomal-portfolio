@@ -20,8 +20,10 @@ const data = [
 ]
 export const Education = () => {
   return (
-    <div id='ed' className='lg:p-11 p-5 lg:px-28 flex flex-col items-center bg-[#3d3e42] relative z-20'>
-        <p className='text-[#f6f6f6] font-Ubuntu lg:text-5xl text-3xl absolute lg:-top-8 -top-5 lg:left-28 left-7'>Education</p>
+    <div id='ed' className='lg:p-11 p-5 lg:px-28 flex flex-col items-center  relative z-20'>
+        
+        <p className='dark:text-[#ffb39b] text-[#14303f] font-Ubuntu lg:text-4xl text-3xl w-full'>Education</p>
+        <div className='h-[2px] w-full dark:bg-[#ffb39b] bg-[#14303f] mt-2' />
         {
             data.map(item => {
                 return(

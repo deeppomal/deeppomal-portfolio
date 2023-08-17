@@ -1,19 +1,14 @@
 import React from 'react'
 import ArrowForwardIcon  from '@mui/icons-material/ArrowRightAlt';
-export const  AchievementCard = ({data}) => {
+import Image from 'next/image'
+export const  AchievementCard = ({data,index}) => {
   return (
-    <div className='w-full lg:w-2/5 lg:h-80 h-56 box-border m-2 rounded relative'>
-        <img className=' h-full w-full object-cover' src={data.image} alt="project image " />
-        <div className='h-full w-full z-10 flex absolute top-0 left-0 bg-[#242427]/90 p-5 flex-col '>
-            <p className='text-[#f5c169] lg:text-2xl  text-xl font-Ubuntu'>{data.title}</p>
-            <p className='w-11/12 text-[#f6f6f6] mt-3 lg:text-lg text-sm font-Montserrat '>{data.description}</p>
-            {data?.link && <a href={data.link} target={'_blank'}  rel="noreferrer"
-            className='bg-[#f5c169] w-1/2 rounded cursor-pointer flex items-center justify-center absolute bottom-5'>
-                <div className='flex items-center justify-center p-1 lg:p-2'>
-                    <p className='text-[#34353a] font-bold font-Montserrat lg:text-lg  '>{data.buttonText}</p>
-                    <ArrowForwardIcon className='text-[#34353a] text-3xl ml-2' />
-                </div>
-            </a>}
+    <div className={`w-full flex flex-col items-center justify-center border-y border-[#14303f] dark:border-[#ffb39b] ${index == 1 && 'lg:border-l'}`}>
+         <div 
+          height={1000} 
+          className={`bg-[url('/static/${data.image}')] my-10 lg:h-80 h-40 w-2/3 bg-cover bg-no-repeat`}/>
+        <div className='w-full relative bottom-0 p-4 bg-[#d6d9df] dark:bg-[#122935] flex items-center justify-center'>
+          <a href={data.link}><p className='text-lg font-Montserrat dark:text-[#f6f6f6] text-[#14303f] font-semibold cursor-pointer underline'>{data.title}</p></a>
         </div>
     </div>
   )

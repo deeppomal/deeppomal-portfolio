@@ -12,25 +12,12 @@ export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", listenToScroll);
-    return () =>
-       window.removeEventListener("scroll", listenToScroll);
-  }, [])
-  const listenToScroll = () => {
-    let heightToHideFrom = 600;
-    const winScroll = document.body.scrollTop ||
-        document.documentElement.scrollTop;
-  
-    if (winScroll > heightToHideFrom) {
-       isVisible &&      // to limit setting state only the first time
-         setIsVisible(true);
-    } else {
-         setIsVisible(true);
-    }
-  };
+  useEffect(()=>{
+    localStorage.theme = 'dark'
+    document.documentElement.classList.add('dark')
+  },[])
   return (
-    <div className='min-h-screen' >
+    <div className="min-h-screen bg-[url('/static/bg2.png')] dark:bg-[url('/static/bgdark.png')] dark:bg-contain]" >
       <Head>
         <title>Deep Pomal</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
