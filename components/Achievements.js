@@ -6,7 +6,7 @@ const data = [
         id:'1',
         title:'NewHacks Hackathon Winner',
         description:'Won MLH Sponsor Prize: Best Accessibility Hack sponsored by Fidelity. Have a look at our project on DevPost',
-        image:'hack.jpg',
+        image:'/static/hackathon.png',
         link:'https://devpost.com/software/easymed-y9so6w',
         buttonText:'DevPost Link'
     },
@@ -14,7 +14,7 @@ const data = [
         id:'2',
         title:'Technical Lead: GDSC Waterloo',
         description:'Got selected as Lead Technical team at GDSC Conestoga waterloo for 2022. Take a look at the workshop I took on teaching how to make a weather app using React Native',
-        image:'gdsc.png',
+        image:'/static/workshop.png',
         link:'https://www.youtube.com/watch?v=N27kPBHLvAQ&t',
         buttonText:'Workshop'
     },

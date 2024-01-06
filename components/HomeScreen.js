@@ -14,7 +14,7 @@ export const HomeScreen = () => {
         <div className='h-1/3 lg:h-full lg:w-1/2 flex lg:justify-center lg:items-end items-center flex-col '>
           <div className='flex flex-col '>
             <p className='lg:text-3xl md:text-2xl text-xl dark:text-[#f6f6f6] text-[#14303f] font-Montserrat '>Hi, I&apos;m<span className='dark:text-[#ffb39b] text-[#14303f] lg:ml-4 text-4xl lg:text-7xl font-Ubuntu'> Deep Pomal</span></p>
-            <p className='lg:text-3xl md:text-2xl text-xl dark:text-[#f6f6f6] text-[#14303f] mt-4 font-Montserrat'>Full Stack Developer</p>
+            <p className='lg:text-3xl md:text-2xl text-xl dark:text-[#f6f6f6] text-[#14303f] mt-4 font-Montserrat'>Data Analyst</p>
             <a href="mailto:deeppomal98@gmail.com" target={'_blank'} rel="noreferrer" className='lg:w-56'>
               <div className='lg:border-4 border-2 border-[#14303f] dark:border-[#ffb39b] lg:w-56 py-2 rounded flex items-center justify-center mt-12 cursor-pointer 
               hover:bg-[#14303f] dark:hover:bg-[#ffb39b] group hover:origin-center'>

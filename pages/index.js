@@ -25,7 +25,7 @@ export default function Home() {
       <Navbar isVisible={isVisible} isMenuVisible={isMenuVisible} setIsMenuVisible={()=>setIsMenuVisible(!isMenuVisible)} />
       <HomeScreen />
       <Portfolio />
-      <Experience />
+      {/* <Experience /> */}
       <Achievements />
       <Education />
     </div>
