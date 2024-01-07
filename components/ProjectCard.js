@@ -9,9 +9,9 @@ export const ProjectCard = ({data,index}) => {
         alt={data.name}
         width={1000}
         height={1000} 
-        className='my-5 h-64 w-2/3 object-contain'/>
+        className='my-5 h-64 w-2/3 object-fill shadow-xl '/>
         <div className='w-full relative bottom-0 p-2 pb-4 bg-[#d6d9df] dark:bg-[#122935] flex items-center justify-center flex-col'>
-            <a href={data.viewLink} target='_blank'><p className='text-lg font-Montserrat dark:text-[#f6f6f6] text-[#14303f] font-semibold cursor-pointer underline'>{data.name}</p></a>
+            <a href={data.viewLink} target='_blank'  rel="noreferrer"><p className='text-lg font-Montserrat dark:text-[#f6f6f6] text-[#14303f] font-semibold cursor-pointer underline'>{data.name}</p></a>
             <p className='text-sm text-center w-11/12 font-Montserrat dark:text-[#dadada] text-[#14303f] font-light mt-2'>{data.descr   }</p>
         </div>
         {/* <div className='relative'>

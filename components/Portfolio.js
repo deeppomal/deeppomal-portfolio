@@ -4,11 +4,11 @@ import { ProjectCard } from './ProjectCard'
 const data = [
   {
     id:'1',
-    name:'Uber Dashboard',
+    name:'Uber Data Engineering',
     descr:"Analyzed Uber data using various tools including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio",
     viewLink:'https://lookerstudio.google.com/s/gQhNwmNu6Ss',
     codeLink:'https://github.com/deeppomal/playbet_frontend',
-    image:'/static/uber.png',
+    image:'/static/uberdb.png',
     border:false,
   },
   {
@@ -17,7 +17,7 @@ const data = [
     descr:"Built an interactive dashboard with a calendar widget as the main filter and multiple visuals including a line chart, histograms, a map, and a heatmap",
     viewLink:'https://public.tableau.com/views/KingCountyHouseSales_17032685658340/KingCountyHouseSales',
     codeLink:'https://github.com/deeppomal/SpotrecApp',
-    image:'/static/house.png',
+    image:'/static/housedb.png',
     border:false
   },
   {
@@ -26,16 +26,16 @@ const data = [
     descr:"Used Kaggle notebook to do EDA on Spotify data, discovered underrated songs and studied the trend of popular songs",
     viewLink:'https://github.com/deeppomal/Spotify-Notebook',
     codeLink:'https://github.com/deeppomal/playbet_frontend',
-    image:'/static/spotify.png',
+    image:'/static/spotkag.png',
     border:true
   },
   {
     id:'4',
     name:'IBM Dashboard',
-    descr:"Used Tableau to create an interactive dashboard for IBM employee data. Uncovered Fascinating Trends within Employee Job Histories",
+    descr:"Used Tableau to create an interactive dashboard for IBM employee data. Uncovered fascinating trends within employee job histories",
     viewLink:'https://public.tableau.com/app/profile/deep.pomal/viz/IBMHRDashboard_17026677631900/Dashboard1?publish=yes',
     codeLink:'https://github.com/deeppomal/SpotrecApp',
-    image:'/static/ibm.png',
+    image:'/static/ibmdb.png',
     border:false
   },
   {
@@ -44,7 +44,7 @@ const data = [
     descr:"Developed a robust MERN stack app for football betting, enabling users to engage in virtual money wagering.",
     viewLink:'https://playbet.netlify.app/',
     codeLink:'https://github.com/deeppomal/playbet_frontend',
-    image:'/static/playbet.jpg',
+    image:'/static/pbfr.png',
     border:false
   },
   {
@@ -53,7 +53,7 @@ const data = [
     descr:"Craft your unique playlists based on your favorite artists and genres. Uncover new beats, and dive into uncharted melodies!",
     viewLink:'https://www.youtube.com/watch?v=R_JPTWPQWGc',
     codeLink:'https://github.com/deeppomal/SpotrecApp',
-    image:'/static/spotrec.png',
+    image:'/static/spotty.jpg',
     border:true
   }
 ]
