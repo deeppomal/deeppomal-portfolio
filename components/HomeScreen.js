@@ -28,7 +28,7 @@ export const HomeScreen = () => {
             <Image
               layout="fill"
               objectFit="contain"
-              src='/static/img1.png'
+              src='/static/meillus.png'
               alt='my picture'
             />
           </div>
