@@ -24,11 +24,11 @@ export const HomeScreen = () => {
           </div>
         </div>
         <div className='lg:h-full h-2/3 lg:w-1/2 flex justify-center items-center relative mt-3 lg:mt-0'> 
-          <div className='relative w-screen h-4/6 '>
+          <div className='relative w-screen h-1/2 '>
             <Image
               layout="fill"
               objectFit="contain"
-              src='/static/meillus.png'
+              src='/static/memoji.png'
               alt='my picture'
             />
           </div>

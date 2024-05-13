@@ -48,9 +48,9 @@ export const Navbar = ({setIsMenuVisible,isMenuVisible}) => {
         <div className='flex-row flex md:flex lg:flex items-center justify-center lg:border-x border-b lg:border-x-[#14303f] lg:dark:border-x-[#ffb39b] 
         border-b-[#14303f] dark:border-b-[#ffb39b] w-full lg:w-3/5 p-4' >
           <a href="#projects"><p className='dark:text-[#ffb39b] text-[#14303f] lg:mx-6 mx-2 text-sm md:text-lg lg:text-xl font-semibold cursor-pointer font-Montserrat'>Projects</p></a>
-          {/* <a href="#exp"><p className='dark:text-[#ffb39b] text-[#14303f] lg:mx-6 mx-2 text-sm md:text-lg  lg:text-xl font-semibold cursor-pointer font-Montserrat'>Experience</p></a> */}
+          <a href="#exp"><p className='dark:text-[#ffb39b] text-[#14303f] lg:mx-6 mx-2 text-sm md:text-lg  lg:text-xl font-semibold cursor-pointer font-Montserrat'>Experience</p></a>
           <a href="#ach"><p className='dark:text-[#ffb39b] text-[#14303f] lg:mx-6 mx-2 text-sm md:text-lg lg:text-xl font-semibold cursor-pointer font-Montserrat'>Achievements</p></a>
-          <a href="#ed"><p className='dark:text-[#ffb39b] text-[#14303f] lg:mx-6 mx-2 text-sm md:text-lg lg:text-xl font-semibold cursor-pointer font-Montserrat'>Education</p></a>
+          {/* <a href="#ed"><p className='dark:text-[#ffb39b] text-[#14303f] lg:mx-6 mx-2 text-sm md:text-lg lg:text-xl font-semibold cursor-pointer font-Montserrat'>Education</p></a> */}
         </div>
         <div className='border-b border-b-[#14303f] dark:border-b-[#ffb39b] w-1/5 p-4 hidden lg:flex items-center justify-center'>
           {

@@ -3,6 +3,15 @@ import { ProjectCard } from './ProjectCard'
 
 const data = [
   {
+    id:'7',
+    name:'Time Series Prediction',
+    descr:"This project involves time series prediction using the ARIMA (AutoRegressive Integrated Moving Average) model in Python",
+    viewLink:'https://github.com/deeppomal/Time-Series-Prediction',
+    codeLink:'https://github.com/deeppomal/playbet_frontend',
+    image:'/static/time.jpg',
+    border:false,
+  },
+  {
     id:'1',
     name:'Uber Data Engineering',
     descr:"Analyzed Uber data using various tools including GCP Storage, Python, Compute Instance, Mage Data Pipeline Tool, BigQuery, and Looker Studio",
@@ -46,16 +55,16 @@ const data = [
     codeLink:'https://github.com/deeppomal/playbet_frontend',
     image:'/static/pbfr.png',
     border:false
-  },
-  {
-    id:'6',
-    name:'SpotRec',
-    descr:"Craft your unique playlists based on your favorite artists and genres. Uncover new beats, and dive into uncharted melodies!",
-    viewLink:'https://www.youtube.com/watch?v=R_JPTWPQWGc',
-    codeLink:'https://github.com/deeppomal/SpotrecApp',
-    image:'/static/spotty.jpg',
-    border:true
   }
+  // {
+  //   id:'6',
+  //   name:'SpotRec',
+  //   descr:"Craft your unique playlists based on your favorite artists and genres. Uncover new beats, and dive into uncharted melodies!",
+  //   viewLink:'https://www.youtube.com/watch?v=R_JPTWPQWGc',
+  //   codeLink:'https://github.com/deeppomal/SpotrecApp',
+  //   image:'/static/spotty.jpg',
+  //   border:true
+  // }
 ]
 export const Portfolio = () => {
   return (
