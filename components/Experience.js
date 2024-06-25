@@ -6,35 +6,35 @@ const data = [
     {
         id:'4',
         year:"May '22 - Present",
-        role:'E-Commerce Data Associate',
-        company:'Walmart',
+        role:'Data Analyst',
+        company:'Honda Canada Inc',
         // jd: "Developed Instagram's reels-like feature for the company's MVP. Increased video loading speeds by 15% and also added infinite scroll \nIntegrated 3 types of authentication: Email/ Phone and Social \nDesigned pixel-perfect UI which was responsive with every Android and IOS operated screen"
 
     },
     {
         id:'1',
-        year:"Feb '21 - Jan '22",
-        role:'Data Engineer',
+        year:"Sep '20 - Dec '21",
+        role:'Data Analyst',
         company:'ScalingWeb',
         // jd: "Developed Instagram's reels-like feature for the company's MVP. Increased video loading speeds by 15% and also added infinite scroll \nIntegrated 3 types of authentication: Email/ Phone and Social \nDesigned pixel-perfect UI which was responsive with every Android and IOS operated screen"
 
     },
     {
         id:'2',
-        year:"June '20 - Feb '21",
+        year:"Mar '19 - Aug '20",
         role:'Data Analyst',
-        company:'Krenai',
+        company:'Phoenix Technologies',
         // jd: "Worked on eCommerce apps, integrated features like ordering products, online payment, live order tracking, and chat functionality with the seller."
 
     },
-    {
-        id:'3',
-        year:"Jan '19 - July '19",
-        company:'National University of Singapore',
-        role:'Research Intern',
-        // jd: "Performed data analysis on a hospital database using machine learning techniques to predict the length of stay of a patient to help the hospital with supply chain management",
+    // {
+    //     id:'3',
+    //     year:"Jan '19 - July '19",
+    //     company:'National University of Singapore',
+    //     role:'Research Intern',
+    //     // jd: "Performed data analysis on a hospital database using machine learning techniques to predict the length of stay of a patient to help the hospital with supply chain management",
 
-    },
+    // },
 
 ]
 export const Experience = () => {
