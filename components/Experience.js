@@ -5,7 +5,7 @@ const data = [
     
     {
         id:'4',
-        year:"May '22 - Present",
+        year:"May '23 - Present",
         role:'Data Analyst',
         company:'Honda Canada Inc',
         // jd: "Developed Instagram's reels-like feature for the company's MVP. Increased video loading speeds by 15% and also added infinite scroll \nIntegrated 3 types of authentication: Email/ Phone and Social \nDesigned pixel-perfect UI which was responsive with every Android and IOS operated screen"
